@@ -143,6 +143,111 @@
             color: white;
         }
 
+        .cta-form {
+            margin-top: 40px;
+            background-color: #003366;
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .cta-form input, .cta-form button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .cta-form input {
+            width: 100%;
+            border: 2px solid #ffcc00;
+            background-color: #f8f8f8;
+        }
+
+        .cta-form button {
+            background-color: #ffcc00;
+            color: black;
+            cursor: pointer;
+        }
+
+        .cta-form button:hover {
+            background-color: #ffb300;
+        }
+
+        /* Policy Section Styling */
+        .policy-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .policy-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #003366;
+        }
+
+        .policy-item p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .policy-details {
+            display: none;
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .expand {
+            color: #003366;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Laws Section Styling */
+        .laws-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .laws-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #003366;
+        }
+
+        .laws-item p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Donation Section Styling */
+        .donation-options {
+            margin-top: 30px;
+        }
+
+        .donation-option {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .donation-option:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Responsive Adjustments */
         @media (max-width: 768px) {
             .vision-list {
                 grid-template-columns: 1fr;
@@ -154,6 +259,11 @@
 
             .cta-button {
                 font-size: 1.2rem;
+            }
+
+            .policy-item,
+            .laws-item {
+                margin: 20px 0;
             }
         }
     </style>
@@ -169,14 +279,14 @@
     <nav class="nav">
         <a href="#about">About Brooks</a>
         <a href="#vision">Our Vision</a>
-        <a href="#dedication">Our Journey</a>
+        <a href="#policy">Policy Breakdown</a>
+        <a href="#laws">Laws & Reforms</a>
+        <a href="#donate">Donate</a>
     </nav>
 
     <div class="section" id="about">
         <h2>Meet Brooks T.</h2>
-        <p>
-            From a young age, Brooks T. knew that leadership wasn't just about power – it was about giving people a voice and building a future that includes everyone. With a heart for unity and a mind for change, he’s running for president to ensure fairness, opportunity, and a future that works for every American.
-        </p>
+        <p>From a young age, Brooks T. knew that leadership wasn't just about power – it was about giving people a voice and building a future that includes everyone. With a heart for unity and a mind for change, he’s running for president to ensure fairness, opportunity, and a future that works for every American.</p>
     </div>
 
     <div class="section" id="vision">
@@ -201,15 +311,94 @@
         </div>
     </div>
 
-    <div class="section" id="dedication">
-        <h2>Our Journey</h2>
-        <p>Brooks T. has always been shaped by those who believed in him: his parents, his teachers, mentors, and every person who shared their wisdom. This campaign is not just about one man – it’s about all of us, and the journey we’ll take together toward a brighter tomorrow.</p>
+    <!-- Policy Breakdown Section -->
+    <div class="section" id="policy">
+        <h2>Policy Breakdown</h2>
+        <div class="policy-item">
+            <h3>Healthcare Reform</h3>
+            <p>Our healthcare system needs an overhaul to make sure every American has access to affordable and quality care. <span class="expand">Read more...</span></p>
+            <div class="policy-details">
+                <p>We will focus on universal coverage, reducing prescription drug prices, and ensuring that mental health services are easily accessible. We believe in strengthening the Affordable Care Act while exploring options for Medicare for All to ensure no one is left behind.</p>
+            </div>
+        </div>
+        <div class="policy-item">
+            <h3>Climate Change and Sustainability</h3>
+            <p>We need bold action to combat climate change and protect our planet for future generations. <span class="expand">Read more...</span></p>
+            <div class="policy-details">
+                <p>Our plan includes transitioning to renewable energy, enforcing stronger environmental regulations, and supporting green innovation. We aim to create green jobs and work with international leaders to combat climate change on a global scale.</p>
+            </div>
+        </div>
+        <div class="policy-item">
+            <h3>Education Reform</h3>
+            <p>Every student deserves access to quality education. <span class="expand">Read more...</span></p>
+            <div class="policy-details">
+                <p>We will address educational inequality by investing in public schools, expanding access to higher education, and implementing student debt relief programs. Our goal is to make education affordable and accessible to all children, regardless of background or income.</p>
+            </div>
+        </div>
+        <div class="policy-item">
+            <h3>Criminal Justice Reform</h3>
+            <p>We need a fairer justice system. <span class="expand">Read more...</span></p>
+            <div class="policy-details">
+                <p>We will end mass incarceration, eliminate mandatory minimum sentences for non-violent crimes, and prioritize rehabilitation over punishment. We will also address systemic inequalities and ensure a fairer trial process for all citizens.</p>
+            </div>
+        </div>
+        <div class="policy-item">
+            <h3>Affordable Housing</h3>
+            <p>Everyone deserves a place to call home. <span class="expand">Read more...</span></p>
+            <div class="policy-details">
+                <p>Our administration will tackle the housing crisis by investing in affordable housing development, offering tax incentives for housing construction, and ensuring that families are not priced out of their homes due to rising rent costs.</p>
+            </div>
+        </div>
+    <div class="policy-item">
+    <h3>Conservative Economic Growth</h3>
+    <p>We will implement policies that encourage innovation, free enterprise, and fiscal responsibility. <span class="expand">Read more...</span></p>
+    <div class="policy-details">
+        <p>Our administration will prioritize lowering taxes to stimulate economic growth, supporting small businesses, and reducing government interference in the private sector. We believe in the power of the free market to create jobs and raise living standards, and we will work to reduce corporate taxes, eliminate burdensome regulations, and cut government spending to balance the budget. Our focus will be on fostering a competitive economy that rewards hard work, individual initiative, and entrepreneurship.</p>
+    </div>
+</div>
+
+
+    <!-- Laws & Reforms Section -->
+    <div class="section" id="laws">
+        <h2>Laws & Reforms</h2>
+        <div class="laws-item">
+            <h3>Criminal Justice Reform</h3>
+            <p>We are committed to reforming the justice system by addressing systemic inequalities and ensuring fair sentencing practices.</p>
+        </div>
+        <div class="laws-item">
+            <h3>Voting Rights</h3>
+            <p>Protecting every citizen's right to vote by supporting efforts to reduce voter suppression and expand access to the ballot box.</p>
+        </div>
+    </div>
+
+    <!-- Donation Section -->
+    <div class="section" id="donate">
+        <h2>Support the Movement</h2>
+        <p>Your contributions help make Brooks T.'s vision a reality. Choose an amount below to donate and join the movement for a better future.</p>
+        <div class="donation-options">
+            <div class="donation-option">$25</div>
+            <div class="donation-option">$50</div>
+            <div class="donation-option">$100</div>
+            <div class="donation-option">$250</div>
+            <div class="donation-option">$500</div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2025 Brooks T. for President 2048</p>
         <p><a href="#contact">Contact</a> | <a href="#volunteer">Volunteer</a> | <a href="#donate">Donate</a></p>
     </footer>
+
+    <script>
+        // Handle expanding policy details
+        const expands = document.querySelectorAll('.expand');
+        expands.forEach(expand => {
+            expand.addEventListener('click', () => {
+                const details = expand.closest('.policy-item').querySelector('.policy-details');
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 
 </body>
 </html>
