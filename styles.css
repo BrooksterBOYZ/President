@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #444;
+}
+
+header {
+    background: linear-gradient(to right, #002868, #BF0A30);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+header .cta-button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 14px 35px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .cta-button:hover {
+    background-color: #ffb300;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 1.2rem;
+    color: #002868;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #BF0A30;
+}
+
+footer {
+    background-color: #002868;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 40px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.policy-item, .laws-item {
+    margin-bottom: 20px;
+}
+
+.policy-item h3, .laws-item h3 {
+    font-size: 1.8rem;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.donation-option {
+    padding: 20px;
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.donation-option:hover {
+    background-color: #ffb300;
+}
