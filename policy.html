@@ -7,6 +7,20 @@
     <title>Policy Breakdown - Brooks T. for President 2048</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript for Read More functionality
+        function togglePolicyDetails(event) {
+            const details = event.target.nextElementSibling;
+            const text = event.target;
+            if (details.style.display === "none") {
+                details.style.display = "block";
+                text.textContent = "Read less...";
+            } else {
+                details.style.display = "none";
+                text.textContent = "Read more...";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -19,12 +33,35 @@
         <h2>Policy Breakdown</h2>
         <div class="policy-item">
             <h3>Healthcare Reform</h3>
-            <p>Our healthcare system needs an overhaul. <span class="expand">Read more...</span></p>
-            <div class="policy-details">
+            <p>Our healthcare system needs an overhaul. <span class="expand" onclick="togglePolicyDetails(event)">Read more...</span></p>
+            <div class="policy-details" style="display: none;">
                 <p>We will focus on universal coverage, reducing prescription drug prices, and ensuring that mental health services are easily accessible.</p>
             </div>
         </div>
-        <!-- Additional policies can be added here -->
+
+        <div class="policy-item">
+            <h3>Education Reform</h3>
+            <p>We need to ensure a better future through education. <span class="expand" onclick="togglePolicyDetails(event)">Read more...</span></p>
+            <div class="policy-details" style="display: none;">
+                <p>We will invest in public education, provide affordable college options, and strengthen vocational training to create opportunities for all students.</p>
+            </div>
+        </div>
+
+        <div class="policy-item">
+            <h3>Gun Reform</h3>
+            <p>We need responsible gun laws. <span class="expand" onclick="togglePolicyDetails(event)">Read more...</span></p>
+            <div class="policy-details" style="display: none;">
+                <p>Our approach to gun reform is to balance the Second Amendment with common-sense laws aimed at reducing gun violence.</p>
+            </div>
+        </div>
+
+        <div class="policy-item">
+            <h3>Economic Equality</h3>
+            <p>Closing the income gap is crucial. <span class="expand" onclick="togglePolicyDetails(event)">Read more...</span></p>
+            <div class="policy-details" style="display: none;">
+                <p>We will introduce policies to raise the minimum wage, improve workers' rights, and ensure that all Americans have access to quality jobs.</p>
+            </div>
+        </div>
     </div>
 
     <nav class="nav">
