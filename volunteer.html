@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the movement and help Brooks T. build a brighter future. Volunteer today!">
+    <title>Join the Movement - Brooks T. for President 2048</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Join the Movement</h1>
+        <p>Be part of something bigger. Help us build a better future together.</p>
+    </header>
+
+    <main>
+        <section class="ways-to-help">
+            <h2>Ways to Get Involved</h2>
+            <ul>
+                <li><strong>Volunteer:</strong> Help with events, outreach, and campaign efforts.</li>
+                <li><strong>Spread the Word:</strong> Share on social media and talk to friends and family.</li>
+                <li><strong>Host an Event:</strong> Organize a local gathering to discuss our vision.</li>
+                <li><strong>Donate:</strong> Contribute to help fund campaign efforts.</li>
+            </ul>
+        </section>
+
+        <section class="volunteer-form">
+            <h2>Sign Up to Volunteer</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="interest">How would you like to help?</label>
+                <select id="interest" name="interest">
+                    <option value="volunteer">Volunteer</option>
+                    <option value="spread-word">Spread the Word</option>
+                    <option value="host-event">Host an Event</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit" class="cta-button">Sign Up</button>
+            </form>
+        </section>
+
+        <section class="cta-links">
+            <a href="donate.html" class="cta-button">Donate</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://brookst2048.com" class="cta-button" target="_blank">Share on Facebook</a>
+        </section>
+    </main>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Brooks</a></li>
+            <li><a href="vision.html">Our Vision</a></li>
+            <li><a href="laws.html">Laws & Reforms</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>&copy; 2025 Brooks T. for President 2048</p>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
