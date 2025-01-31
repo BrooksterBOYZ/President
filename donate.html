@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brooks T. for President 2048 - Donate">
+    <meta name="description" content="Support Brooks T.'s campaign with a donation and be a part of shaping the future.">
     <title>Donate - Brooks T. for President 2048</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -15,28 +15,46 @@
         <p>Your contributions help make Brooks T.'s vision a reality.</p>
     </header>
 
-    <div class="section" id="donate">
-        <h2>Donate</h2>
-        <p>Choose an amount to donate and join the movement for a better future.</p>
-        <div class="donation-options">
-            <div class="donation-option">$25</div>
-            <div class="donation-option">$50</div>
-            <div class="donation-option">$100</div>
-            <div class="donation-option">$250</div>
-            <div class="donation-option">$500</div>
-        </div>
-    </div>
+    <main class="section" id="donate">
+        <h2>Make a Contribution</h2>
+        <p>Choose an amount to donate and help shape the future.</p>
+
+        <form action="https://www.paypal.com/donate" method="POST" target="_blank">
+            <div class="donation-options">
+                <button type="submit" name="amount" value="25">$25</button>
+                <button type="submit" name="amount" value="50">$50</button>
+                <button type="submit" name="amount" value="100">$100</button>
+                <button type="submit" name="amount" value="250">$250</button>
+                <button type="submit" name="amount" value="500">$500</button>
+            </div>
+
+            <div class="custom-donation">
+                <label for="customAmount">Enter a custom amount:</label>
+                <input type="number" id="customAmount" name="amount" min="5" placeholder="Enter amount">
+            </div>
+
+            <button type="submit" class="donate-btn">Donate Now</button>
+        </form>
+    </main>
 
     <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Brooks</a>
-        <a href="vision.html">Our Vision</a>
-        <a href="laws.html">Laws & Reforms</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Brooks</a></li>
+            <li><a href="vision.html">Our Vision</a></li>
+            <li><a href="laws.html">Laws & Reforms</a></li>
+        </ul>
     </nav>
 
     <footer>
         <p>&copy; 2025 Brooks T. for President 2048</p>
-        <p><a href="contact.html">Contact</a> | <a href="volunteer.html">Volunteer</a> | <a href="donate.html">Donate</a></p>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
     </footer>
 
 </body>
